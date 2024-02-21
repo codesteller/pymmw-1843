@@ -1,3 +1,11 @@
+# Repository Update - Tested on AWR1843Boost
+## Bug Fixes
+[x] No Handler Issue - Threshold Issue 
+[x] No Range Profile Plot
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
 # Pythonic mmWave Toolbox for TI's IWR Radar Sensors
 
 ## Introduction
