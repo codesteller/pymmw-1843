@@ -1,9 +1,12 @@
-# Repository Update - Tested on AWR1843Boost
+# Repository Update in this Fork - Tested on AWR1843Boost
 ## Bug Fixes
-[x] No Handler Issue - Threshold Issue 
-[x] No Range Profile Plot
+  - [x] No Handler Issue - Threshold Issue
+  - [x] No Range Profile Plot
+  - [ ] No Detection Plot
 
-
+## Running the Code
+  - Run the `pymmw.py` file directly from the `source` folder
+  - If you get error as `pymmw _read_ no handler found` check troubleshooting section below from the original Author.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 # Pythonic mmWave Toolbox for TI's IWR Radar Sensors

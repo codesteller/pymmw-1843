@@ -39,7 +39,7 @@ def _init_(data, fw):
     return False
 
 
-def _read_(prt, dat, timeout=2, handle=None):  # observe control port and call handler when firmware is recognized
+def _read_(prt, dat, timeout=100, handle=None):  # observe control port and call handler when firmware is recognized
 
     script_path = os.path.dirname(os.path.realpath(sys.argv[0]))
     
@@ -62,6 +62,10 @@ def _read_(prt, dat, timeout=2, handle=None):  # observe control port and call h
         
         while handle is None:
             data = prt.readline().decode('latin-1')
+            # data = [i.decode('latin-1') for i in prt.readlines()]
+            # data = '  '.join(data)
+
+            # print("DATA: {}".format(data))
   
             if _init_(data, fw):  # firmware identified
                 handle = data.strip()

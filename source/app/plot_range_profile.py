@@ -31,7 +31,9 @@ except ImportError as e:
 
 def update(data, history=5):
 
-    ax.lines.clear()
+    # ax.lines.clear()
+    for line in ax.lines:
+        line.remove()
 
     mpl.colors._colors_full_map.cache.clear()
 
